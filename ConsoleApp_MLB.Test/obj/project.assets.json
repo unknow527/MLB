@@ -8,6 +8,19 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
+      "Dapper/2.0.123": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/17.3.2": {
         "type": "package",
         "compile": {
@@ -869,6 +882,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Dapper": "2.0.123",
           "Newtonsoft.Json": "13.0.3",
           "System.Configuration.ConfigurationManager": "7.0.0",
           "System.Data.SqlClient": "4.8.5"
@@ -932,6 +946,24 @@
         "coverlet-icon.png",
         "coverlet.collector.3.1.2.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "Dapper/2.0.123": {
+      "sha512": "RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+      "type": "package",
+      "path": "dapper/2.0.123",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.0.123.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net5.0/Dapper.dll",
+        "lib/net5.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml"
       ]
     },
     "Microsoft.CodeCoverage/17.3.2": {
@@ -3371,28 +3403,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sam\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Vince\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Csharp\\vs2022\\ConsoleApp_MLB\\ConsoleApp_MLB.Test\\ConsoleApp_MLB.Test.csproj",
+      "projectUniqueName": "C:\\Csharp\\.net core\\MLB\\ConsoleApp_MLB.Test\\ConsoleApp_MLB.Test.csproj",
       "projectName": "ConsoleApp_MLB.Test",
-      "projectPath": "C:\\Csharp\\vs2022\\ConsoleApp_MLB\\ConsoleApp_MLB.Test\\ConsoleApp_MLB.Test.csproj",
-      "packagesPath": "C:\\Users\\Sam\\.nuget\\packages\\",
-      "outputPath": "C:\\Csharp\\vs2022\\ConsoleApp_MLB\\ConsoleApp_MLB.Test\\obj\\",
+      "projectPath": "C:\\Csharp\\.net core\\MLB\\ConsoleApp_MLB.Test\\ConsoleApp_MLB.Test.csproj",
+      "packagesPath": "C:\\Users\\Vince\\.nuget\\packages\\",
+      "outputPath": "C:\\Csharp\\.net core\\MLB\\ConsoleApp_MLB.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Sam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Vince\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -3405,8 +3433,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Csharp\\vs2022\\ConsoleApp_MLB\\ConsoleApp_MLB\\ConsoleApp_MLB.csproj": {
-              "projectPath": "C:\\Csharp\\vs2022\\ConsoleApp_MLB\\ConsoleApp_MLB\\ConsoleApp_MLB.csproj"
+            "C:\\Csharp\\.net core\\MLB\\ConsoleApp_MLB\\ConsoleApp_MLB.csproj": {
+              "projectPath": "C:\\Csharp\\.net core\\MLB\\ConsoleApp_MLB\\ConsoleApp_MLB.csproj"
             }
           }
         }
@@ -3454,7 +3482,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

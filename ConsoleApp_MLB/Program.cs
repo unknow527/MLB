@@ -15,17 +15,22 @@ namespace ConsoleApp_MLB
         static void Main(string[] args) 
         {
             MLBGamesDataHelper mlb = new MLBGamesDataHelper();
+            //uspMLBGamesDataHelper mlb = new uspMLBGamesDataHelper();
 
             //1.查詢賽事
             var games = mlb.SelectGames();
-            Console.WriteLine(games);
+            foreach (var game in games)
+            {
+                Console.WriteLine(game);
+            }
+            //Console.WriteLine(games.ToList());
 
             //2.新增賽事
             //t_game g = new t_game(); 
             //g.f_gameDate = "2023-03-21";
             //g.f_gameStatus = 1;
             //g.f_teamAId = 5;
-            //g.f_teamBId = 24;
+            //g.f_teamBId = 6;
             //g.f_ra = 0;
             //g.f_rb = 0;
             //g.f_playerAId = 20;
@@ -37,7 +42,7 @@ namespace ConsoleApp_MLB
             //Console.WriteLine(games);
 
             //3.刪除賽事
-            //string gid = "2023-03-21_8_4";
+            //string gid = "2023-03-21_5_6";
             //var games = mlb.DeleteGame(gid);
             //Console.WriteLine(games);
 

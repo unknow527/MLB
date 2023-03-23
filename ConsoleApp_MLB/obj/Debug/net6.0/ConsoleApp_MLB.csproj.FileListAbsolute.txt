@@ -32,3 +32,38 @@ C:\Csharp\vs2022\ConsoleApp_MLB\ConsoleApp_MLB\obj\Debug\net6.0\ConsoleApp_MLB.p
 C:\Csharp\vs2022\ConsoleApp_MLB\ConsoleApp_MLB\obj\Debug\net6.0\ConsoleApp_MLB.genruntimeconfig.cache
 C:\Csharp\vs2022\ConsoleApp_MLB\ConsoleApp_MLB\obj\Debug\net6.0\ref\ConsoleApp_MLB.dll
 C:\Csharp\vs2022\ConsoleApp_MLB\ConsoleApp_MLB\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\ConsoleApp_MLB.exe
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\ConsoleApp_MLB.dll.config
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\ConsoleApp_MLB.deps.json
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\ConsoleApp_MLB.runtimeconfig.json
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\ConsoleApp_MLB.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\ConsoleApp_MLB.pdb
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\Dapper.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\obj\Debug\net6.0\ConsoleApp_MLB.csproj.AssemblyReference.cache
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\obj\Debug\net6.0\ConsoleApp_MLB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\obj\Debug\net6.0\ConsoleApp_MLB.AssemblyInfoInputs.cache
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\obj\Debug\net6.0\ConsoleApp_MLB.AssemblyInfo.cs
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\obj\Debug\net6.0\ConsoleApp_MLB.csproj.CoreCompileInputs.cache
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\obj\Debug\net6.0\ConsoleApp_MLB.csproj.CopyComplete
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\obj\Debug\net6.0\ConsoleApp_MLB.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\obj\Debug\net6.0\refint\ConsoleApp_MLB.dll
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\obj\Debug\net6.0\ConsoleApp_MLB.pdb
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\obj\Debug\net6.0\ConsoleApp_MLB.genruntimeconfig.cache
+C:\Csharp\.net core\MLB\ConsoleApp_MLB\obj\Debug\net6.0\ref\ConsoleApp_MLB.dll

@@ -16,8 +16,9 @@ namespace ConsoleApp_MLB.Applibs
     public class MLBGamesDataHelper
     {
         // db連線字串
-        private string constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Csharp\vs2022\ConsoleApp_MLB\ConsoleApp_MLB\App_Data\db_MLB.mdf;Integrated Security = True";
-
+        //private readonly string constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Csharp\vs2022\ConsoleApp_MLB\ConsoleApp_MLB\App_Data\db_MLB.mdf;Integrated Security = True";
+        private readonly string constr = @"Data Source = .\SQLEXPRESS; Initial Catalog = DB_MLB; User ID = sa; Password=1234;";
+        //private readonly string constr = @"Data Source = .\SQLEXPRESS; Initial Catalog = DB_MLB;Integrated Security = SSPI";
         //executeSql方法可傳入SQL字串來編輯資料表
         private void executeSql(string sql)
         {

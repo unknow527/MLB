@@ -18,7 +18,7 @@ namespace ConsoleApp_MLB.Model
         public int f_playerAId { get; set; }
         public int f_playerBId { get; set; }
         public int f_sourceId { get; set; }
-        public string f_desc { get; set; }
+        public string? f_desc { get; set; }
     }
 }
 

@@ -22,5 +22,5 @@ AS
 
 -- Batch Separator
 
-SELECT * FROM t_game;
+SELECT * FROM t_game ORDER BY f_gameId desc;
 
