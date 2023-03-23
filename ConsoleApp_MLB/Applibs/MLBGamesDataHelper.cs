@@ -16,9 +16,11 @@ namespace ConsoleApp_MLB.Applibs
     public class MLBGamesDataHelper
     {
         // db連線字串
-        //private readonly string constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Csharp\vs2022\ConsoleApp_MLB\ConsoleApp_MLB\App_Data\db_MLB.mdf;Integrated Security = True";
-        private readonly string constr = @"Data Source = .\SQLEXPRESS; Initial Catalog = DB_MLB; User ID = sa; Password=1234;";
-        //private readonly string constr = @"Data Source = .\SQLEXPRESS; Initial Catalog = DB_MLB;Integrated Security = SSPI";
+        // localdb:
+        private string constr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Csharp\vs2022\ConsoleApp_MLB\ConsoleApp_MLB\App_Data\db_MLB.mdf;Integrated Security = True";
+        // sqlserver:
+        //private string constr = @"Data Source=.\SQLEXPRESS;Initial Catalog=mlb;User ID=sa;Password=1234";
+
         //executeSql方法可傳入SQL字串來編輯資料表
         private void executeSql(string sql)
         {
@@ -41,7 +43,7 @@ namespace ConsoleApp_MLB.Applibs
         }
         // MLB game CRUD==================================================================================================================
         // SelectGames =>> 查詢全部賽事資料
-        public string SelectGame(int num)
+        public DataTable SelectGame(int num)
         {
             // 執行SQL查詢
             string sql = @"SELECT TOP 1
@@ -65,12 +67,12 @@ namespace ConsoleApp_MLB.Applibs
                             ORDER BY g.f_gameId desc";
             DataTable dt = querySql(sql);
             // DataTable轉Json
-            var rs = JsonConvert.SerializeObject(dt, Newtonsoft.Json.Formatting.Indented);
+            //var rs = JsonConvert.SerializeObject(dt, Newtonsoft.Json.Formatting.Indented);
 
-            return rs;
+            return dt;
         }
         // SelectGames =>> 查詢最新一筆賽事
-        public string SelectGames()
+        public DataTable SelectGames()
         {
             // 執行SQL查詢
             string sql = @"SELECT
@@ -94,12 +96,12 @@ namespace ConsoleApp_MLB.Applibs
                             ORDER BY g.f_gameId desc";
             DataTable dt = querySql(sql);
             // DataTable轉Json
-            var rs = JsonConvert.SerializeObject(dt, Newtonsoft.Json.Formatting.Indented);
+            //var rs = JsonConvert.SerializeObject(dt, Newtonsoft.Json.Formatting.Indented);
 
-            return rs;
+            return dt;
         }
         // CreateGame =>> 新增賽事資料
-        public string CreateGame(t_game g)
+        public DataTable CreateGame(t_game g)
         {  
             string sql = $"INSERT INTO t_game(f_gameId, f_gameDate, f_gameStatus, f_teamAId, f_teamBId, f_ra, f_rb, f_playerAId, f_playerBId, f_sourceId, f_desc)VALUES ('{g.f_gameId}','{g.f_gameDate}','{g.f_gameStatus}','{g.f_teamAId}','{g.f_teamBId}','{g.f_ra}','{g.f_rb}','{g.f_playerAId}','{g.f_playerBId}','{g.f_sourceId}','{g.f_desc}')";
             
@@ -108,7 +110,7 @@ namespace ConsoleApp_MLB.Applibs
             return SelectGame(1);
         }
         // DeleteGame =>> 刪除賽事資料
-        public string DeleteGame(string id)
+        public DataTable DeleteGame(string id)
         {
             string sql = "DELETE FROM t_game WHERE f_gameId='"
                 + id.Replace("'", "''") + "'";
