@@ -859,24 +859,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vince\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Sam\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Csharp\\.net core\\MLB\\ConsoleApp_MLB\\ConsoleApp_MLB.csproj",
+      "projectUniqueName": "C:\\Csharp\\MLB\\ConsoleApp_MLB\\ConsoleApp_MLB.csproj",
       "projectName": "ConsoleApp_MLB",
-      "projectPath": "C:\\Csharp\\.net core\\MLB\\ConsoleApp_MLB\\ConsoleApp_MLB.csproj",
-      "packagesPath": "C:\\Users\\Vince\\.nuget\\packages\\",
-      "outputPath": "C:\\Csharp\\.net core\\MLB\\ConsoleApp_MLB\\obj\\",
+      "projectPath": "C:\\Csharp\\MLB\\ConsoleApp_MLB\\ConsoleApp_MLB.csproj",
+      "packagesPath": "C:\\Users\\Sam\\.nuget\\packages\\",
+      "outputPath": "C:\\Csharp\\MLB\\ConsoleApp_MLB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Vince\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Sam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -934,7 +938,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

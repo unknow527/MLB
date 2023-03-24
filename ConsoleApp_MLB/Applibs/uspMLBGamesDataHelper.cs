@@ -75,9 +75,9 @@ namespace ConsoleApp_MLB.Applibs
                     parameters.Add("@f_sourceId", g.f_sourceId, DbType.Int16, ParameterDirection.Input);
                     parameters.Add("@f_desc", g.f_desc, DbType.String, ParameterDirection.Input);
                     //執行修改預存程序
-                    var result = con.Execute("spCreateGame", parameters, commandType: CommandType.StoredProcedure);
+                    int return_value = con.Execute("spCreateGame", parameters, commandType: CommandType.StoredProcedure);
                
-                    return result;
+                    return return_value;
                 }
             }
             catch (Exception ex)
@@ -103,8 +103,8 @@ namespace ConsoleApp_MLB.Applibs
                     // input
                     parameters.Add("@f_gameId", id, DbType.String, ParameterDirection.Input);
                     //執行修改預存程序
-                    var result = con.Execute("spDeleteGame", parameters, commandType: CommandType.StoredProcedure);
-                    return result;
+                    int return_value = con.Execute("spDeleteGame", parameters, commandType: CommandType.StoredProcedure);
+                    return return_value;
                 }
             }
             catch (Exception ex)

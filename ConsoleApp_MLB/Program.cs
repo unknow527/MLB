@@ -34,14 +34,14 @@ namespace ConsoleApp_MLB
             //g.f_playerBId = 66;
             //g.f_sourceId = 1;
             //g.f_desc = "test";
-            //g.f_gameId = g.f_gameDate.ToString() + "_" + g.f_teamAId + "_" + g.f_teamBId;
-            //var games = mlb.CreateGame(g);
-            //Console.WriteLine(games);
+            //g.f_gameId = g.f_gameDate + "_" + g.f_teamAId + "_" + g.f_teamBId;
+            //int return_value = mlb.CreateGame(g);
+            //Console.WriteLine(return_value);
 
             //3.刪除賽事
             //string gid = "2023-03-21_26_27";
-            //var games = mlb.DeleteGame(gid);
-            //Console.WriteLine(games);
+            //int return_value = mlb.DeleteGame(gid);
+            //Console.WriteLine(return_value);
 
             Console.ReadLine();
         }

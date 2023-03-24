@@ -9,44 +9,54 @@ namespace ConsoleApp_MLB.Test
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestMethod1_Select()
         {
             // 1.查詢賽事
-            MLBGamesDataHelper mlb = new MLBGamesDataHelper();
+
+            // 初始化Arrange
+            // 執行Act
+            uspMLBGamesDataHelper mlb = new uspMLBGamesDataHelper();
             var games = mlb.SelectGames();
-            Console.WriteLine(games);
-            Console.ReadLine();
+            // 驗證Assert
+            Assert.IsNotNull(games);
         }
         [TestMethod]
-        public void TestMethod2()
+        public void TestMethod2_Create()
         {
             // 2.新增賽事
-            MLBGamesDataHelper mlb = new MLBGamesDataHelper();
+
+            // 初始化Arrange
             t_game g = new t_game();
+            g.f_gameId = "2023-03-21_27_26";
             g.f_gameDate = "2023-03-21";
             g.f_gameStatus = 1;
-            g.f_teamAId = 5;
-            g.f_teamBId = 24;
+            g.f_teamAId = 27;
+            g.f_teamBId = 26;
             g.f_ra = 0;
             g.f_rb = 0;
-            g.f_playerAId = 20;
-            g.f_playerBId = 21;
+            g.f_playerAId = 66;
+            g.f_playerBId = 65;
             g.f_sourceId = 1;
             g.f_desc = "test";
-            g.f_gameId = g.f_gameDate.ToString() + "_" + g.f_teamAId + "_" + g.f_teamBId;
-            var games = mlb.CreateGame(g);
-            Console.WriteLine(games);
-            Console.ReadLine();
+            int expected = 1;
+            // 執行Act
+            uspMLBGamesDataHelper mlb = new uspMLBGamesDataHelper();
+            int return_value = mlb.CreateGame(g);
+            // 驗證Assert
+            Assert.AreEqual(expected, return_value);
         }
         [TestMethod]
-        public void TestMethod3()
+        public void TestMethod3_Delete()
         {
             // 3.刪除賽事
-            MLBGamesDataHelper mlb = new MLBGamesDataHelper();
-            string gid = "2023-03-21_8_4";
-            var games = mlb.DeleteGame(gid);
-            Console.WriteLine(games);
-            Console.ReadLine();
+            // 初始化Arrange
+            string gid = "2023-03-21_27_26";
+            int expected = 1;
+            // 執行Act
+            uspMLBGamesDataHelper mlb = new uspMLBGamesDataHelper();
+            int return_value = mlb.DeleteGame(gid);
+            // 驗證Assert
+            Assert.AreEqual(expected, return_value);
         }
     }
 }
