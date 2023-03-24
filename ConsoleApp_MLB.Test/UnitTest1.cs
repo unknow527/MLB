@@ -9,6 +9,21 @@ namespace ConsoleApp_MLB.Test
     public class UnitTest1
     {
         [TestMethod]
+        public void TestMethod_SelectAllData()
+        {
+            // 1.查詢賽事
+
+            // 初始化Arrange
+            // 執行Act
+            uspMLBGamesDataHelper mlb = new uspMLBGamesDataHelper();
+            var result = mlb.SelectAllData();
+
+            // 驗證Assert
+            Assert.IsNull(result.ex);
+            Assert.IsTrue(result.t_games.Any());
+            Assert.IsTrue(result.t_kinds.Any());
+        }
+        [TestMethod]
         public void TestMethod1_Select()
         {
             // 1.查詢賽事

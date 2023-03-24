@@ -27,6 +27,33 @@ namespace ConsoleApp_MLB.Applibs
             this.constr = @"Data Source=.\SQLEXPRESS;Initial Catalog=mlb;User ID=sa;Password=1234";
         }
 
+
+        /// <summary>
+        /// 查詢ALL資料
+        /// </summary>
+        /// <returns></returns>
+        public (Exception ex, IEnumerable<t_game> t_games, IEnumerable<t_kind> t_kinds) SelectAllData()
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(constr))
+                {
+                    var results = con.QueryMultiple("spGetAllData", commandType: CommandType.StoredProcedure);
+                    var t1 = results.Read<t_game>();
+                    var t2 = results.Read<t_kind>();   
+                    
+                    return (null,t1,t2);
+                }
+            }
+            catch (Exception ex)
+            {
+                // 處理例外
+                Console.WriteLine($"Error: {ex.Message}");
+                return (ex,null,null);
+            }
+        }
+
+
         /// <summary>
         /// 查詢賽事資料
         /// </summary>

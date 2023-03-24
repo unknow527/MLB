@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[SelectAllGames]
+﻿CREATE PROCEDURE [dbo].[spSelectAllGames]
 AS
 	SELECT
 		g.f_gameId, 
