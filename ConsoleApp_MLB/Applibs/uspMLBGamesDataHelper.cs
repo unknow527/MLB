@@ -98,11 +98,11 @@ namespace ConsoleApp_MLB.Applibs
             {
                 using (SqlConnection con = new SqlConnection(constr))
                 {
-                    //準備參數
+                    // 準備參數
                     DynamicParameters parameters = new DynamicParameters();
                     // input
                     parameters.Add("@f_gameId", id, DbType.String, ParameterDirection.Input);
-                    //執行修改預存程序
+                    // 執行預存程序
                     int return_value = con.Execute("spDeleteGame", parameters, commandType: CommandType.StoredProcedure);
                     return return_value;
                 }

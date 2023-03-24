@@ -27,15 +27,15 @@ namespace ConsoleApp_MLB.Test
 
             // 初始化Arrange
             t_game g = new t_game();
-            g.f_gameId = "2023-03-21_27_26";
+            g.f_gameId = "2023-03-21_26_27";
             g.f_gameDate = "2023-03-21";
             g.f_gameStatus = 1;
-            g.f_teamAId = 27;
-            g.f_teamBId = 26;
+            g.f_teamAId = 26;
+            g.f_teamBId = 27;
             g.f_ra = 0;
             g.f_rb = 0;
-            g.f_playerAId = 66;
-            g.f_playerBId = 65;
+            g.f_playerAId = 65;
+            g.f_playerBId = 66;
             g.f_sourceId = 1;
             g.f_desc = "test";
             int expected = 1;
@@ -50,7 +50,7 @@ namespace ConsoleApp_MLB.Test
         {
             // 3.刪除賽事
             // 初始化Arrange
-            string gid = "2023-03-21_27_26";
+            string gid = "2023-03-21_26_27";
             int expected = 1;
             // 執行Act
             uspMLBGamesDataHelper mlb = new uspMLBGamesDataHelper();

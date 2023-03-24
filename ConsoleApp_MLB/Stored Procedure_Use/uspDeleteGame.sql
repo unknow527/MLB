@@ -4,7 +4,7 @@ GO
 DECLARE	@return_value Int
 
 EXEC	@return_value = [dbo].[spDeleteGame]
-		@f_gameId = N'2023-03-21_5_6'
+		@f_gameId = N'2023-03-21_26_27'
 
 SELECT	@return_value as 'Return Value'
 
